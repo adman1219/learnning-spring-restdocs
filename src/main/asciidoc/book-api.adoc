@@ -1,0 +1,79 @@
+= Spring Rest Documentations
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+:operation-http-request-title: request
+:operation-http-response-title: response
+
+[[resources]]
+== Resources
+
+[[resources-index]]
+== Index
+
+The index provides the entry point into the service.
+
+[[resources-index-access]]
+=== Accessing the index
+
+A `GET` request is used to access the index
+
+operation::index[snippets='response-fields,http-response,links']
+
+[[resources-books]]
+== Books
+[[resources-books-create]]
+=== Create Book
+[[resources-books-create-request]]
+==== http request
+include::{snippets}/book-create/http-request.adoc[]
+[[resources-books-create-request-fields]]
+===== Request Fields
+.book formal table
+include::{snippets}/book-create/request-fields.adoc[]
+.publisher formal table
+include::{snippets}/book-create/request-fields-publisher.adoc[]
+.contact formal table
+include::{snippets}/book-create/request-fields-contact.adoc[]
+==== Http Response
+include::{snippets}/book-create/http-response.adoc[]
+[[resources-book-get]]
+=== Get Book
+[[resources-book-get-request]]
+==== Http Request
+include::{snippets}/book-get/http-request.adoc[]
+[[resources-books-create-request-fields]]
+===== Request Path Fields
+include::{snippets}/book-get/path-parameters.adoc[]
+==== Http Response
+include::{snippets}/book-get/http-response.adoc[]
+===== Response Fields
+.book formal table
+include::{snippets}/book-create/request-fields.adoc[]
+.publisher formal table
+include::{snippets}/book-create/request-fields-publisher.adoc[]
+.contact formal table
+include::{snippets}/book-create/request-fields-contact.adoc[]
+==== Links
+.Links
+include::{snippets}/book-get/links.adoc[]
+[[resources-books-get-all]]
+=== Get Books All
+[[resources-books-get-all-request]]
+==== Http Request
+include::{snippets}/books-all/http-request.adoc[]
+==== Http Response
+include::{snippets}/books-all/http-response.adoc[]
+[[resources-books-with-params]]
+=== Get Books With Query Parameters
+[[resources-books-with-params-request]]
+==== Http Request
+include::{snippets}/books-with-query-params/http-request.adoc[]
+===== Request Parameters
+.Request Query Parameters
+include::{snippets}/books-with-query-params/request-parameters.adoc[]
+==== Http Response
+include::{snippets}/books-with-query-params/http-response.adoc[]
